@@ -19,9 +19,13 @@
  # Frontend Routes
 
  /
+ 
  /login
+ 
  /register
+ 
  /edit
+ 
 
  # Db
 
