@@ -1,0 +1,215 @@
+{
+	"info": {
+		"_postman_id": "9153babb-0ace-4f3d-8e58-92d5f93718b4",
+		"name": "CodeawayCase",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3074074"
+	},
+	"item": [
+		{
+			"name": "CreateParameter",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"parameterkey\":\"key3\",\r\n    \"value\":\"val3\",\r\n    \"description\": \"desc3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/parameter",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parameter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Parameters List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/parameterlist",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parameterlist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Parameter By Id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJMYW5nIjoiVFIiLCJFbWFpbCI6Im11cmF0LmthcmF5aWxhbkBkb3R0by5jb20udHIiLCJVc2VySWQiOiI0NDEiLCJNZW1iZXJJZCI6IjEiLCJNZW1iZXJDb2RlIjoiQk8iLCJNZXJjaGFudElkIjoiMjE1IiwiTWVyY2hhbnROdW1iZXIiOiIyMTUiLCJVc2VyU3RhdHVzIjoiQSIsIkNoYW5nZVBhc3N3b3JkUmVxdWlyZWQiOiIwIiwiUGFzc3dvcmRTdGF0dXMiOiJVIiwiVXNlclJvbGVzIjoiMSIsIlJvbGVTY29yZSI6IjgwIiwiVGlja2V0VHlwZSI6IkFQSSIsIlVzZXJUeXBlIjoiQVBJX1VTRVIiLCJuYmYiOjE2ODk2MjU3NjcsImV4cCI6MTcwNzYyNTc2NywiaWF0IjoxNjg5NjI1NzY3fQ.-IWYwrkisevLYlQlMtiBdrQ6-cLyVRxqqvfHqHCB0Vs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/parameter/UXQFuDtlJrjcEYfmd6Po",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parameter",
+						"UXQFuDtlJrjcEYfmd6Po"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Parameter",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/parameter/Fbp6BtVxCYVuCrPcWRhx",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parameter",
+						"Fbp6BtVxCYVuCrPcWRhx"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Parameter",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"parameterkey\":\"54131\",\r\n    \"value\":\"541231\",\r\n    \"description\": \"5423\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/parameter/UXQFuDtlJrjcEYfmd6Po",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parameter",
+						"UXQFuDtlJrjcEYfmd6Po"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Account",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"ulvi\",\r\n    \"email\": \"ulvi@gmail.com\"\r\n    ,\"password\" : \"Asdzxc1122\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/account",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"ulvi@gmail.com\"\r\n    ,\"password\" : \"Asdzxc1122\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/account/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"account",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get App Configs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/config",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"config"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
