@@ -20,6 +20,7 @@ The purpose of the project is to manipulate the config file of mobile applicatio
  Get Application Configuration List
 
  # Frontend Routes
+ 
  https://reactfrontend-7wpxaylhhq-uc.a.run.app/
  
  /  (parameter list)
