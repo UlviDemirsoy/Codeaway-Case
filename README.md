@@ -17,6 +17,7 @@ The purpose of the project is to manipulate the config file of mobile applicatio
  # Config Service Features
 
  Get Application Configuration List
+ https://configapi-3uudw2ymta-uc.a.run.app/config
 
  # Frontend Routes
 
