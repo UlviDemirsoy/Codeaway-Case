@@ -2,6 +2,8 @@ The purpose of the project is to manipulate the config file of mobile applicatio
  
  # Backend Service Features
 
+ https://backendapi-a352piz6wq-uc.a.run.app
+
  Create Account
  
  Login
@@ -21,7 +23,7 @@ The purpose of the project is to manipulate the config file of mobile applicatio
 
  # Frontend Routes
  
- https://reactfrontend-7wpxaylhhq-uc.a.run.app/
+ https://reactfrontend-7wpxaylhhq-uc.a.run.app
  
  /  (parameter list)
  
