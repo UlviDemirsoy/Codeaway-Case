@@ -18,7 +18,7 @@
 
  # Frontend Routes
 
- /
+ /  (parameter list)
  
  /login
  
