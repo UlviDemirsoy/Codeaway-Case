@@ -15,12 +15,13 @@ The purpose of the project is to manipulate the config file of mobile applicatio
  Get Parameters List
 
  # Config Service Features
-
- Get Application Configuration List
  https://configapi-3uudw2ymta-uc.a.run.app/config
 
- # Frontend Routes
+ Get Application Configuration List
 
+ # Frontend Routes
+ https://reactfrontend-7wpxaylhhq-uc.a.run.app/
+ 
  /  (parameter list)
  
  /login
