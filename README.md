@@ -12,13 +12,16 @@
  
  Get Parameters List
 
- # Config Service
+ # Config Service Features
 
  Get Application Configuration List
 
- # Frontend
+ # Frontend Routes
 
- React
+ /
+ /login
+ /register
+ /edit
 
  # Db
 
