@@ -4,9 +4,19 @@ The purpose of the project is to manipulate the config file of mobile applicatio
 
  https://backendapi-a352piz6wq-uc.a.run.app
 
+ POST /account > create account
+ POST /account/login > login
+ POST /parameter > create parameter
+ PUT  /parameter/:id > update parameter
+ GET  /parameter/:id > get parameter by id
+ GET  /parameterlist > get parameter list
+ 
+ DELETE  /parameter/:id > update parameter
+
  # Config Service
  
  https://configapi-3uudw2ymta-uc.a.run.app/config
+ GET  /config > get app config
 
 
  # Frontend
