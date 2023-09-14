@@ -8,7 +8,6 @@ The purpose of the project is to manipulate the config file of mobile applicatio
  
  https://configapi-3uudw2ymta-uc.a.run.app/config
 
- Get Application Configuration List
 
  # Frontend
  
