@@ -39,7 +39,7 @@ const port = environment?.PORT || 3002;
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.use(cors({ credentials: true, origin: "http://localhost:3000" }));
+app.use(cors({ credentials: true, origin: "https://reactfrontend-7wpxaylhhq-uc.a.run.app" }));
 
 for (let i = 0; i < interceptors.length; i++) {
   app.use(interceptors[i]);
