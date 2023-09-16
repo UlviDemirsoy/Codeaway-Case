@@ -1,34 +1,30 @@
- # Backend Service Features
+The purpose of the project is to manipulate the config file of mobile applications and serve them to devices via public API. The public config service is separated from the back end service. In the backend service, the jwt token provided by Firebase auth is checked for each request with the auth middleware.
+ 
+ # Backend Service
 
- Create Account
- 
- Login
- 
- Insert Parameter
- 
- Delete Parameter
- 
- Get Parameter By Id
- 
- Get Parameters List
+ https://backendapi-a352piz6wq-uc.a.run.app
 
- # Config Service Features
+ POST /account > create account
+ 
+ POST /account/login > login
+ 
+ POST /parameter > create parameter
+ 
+ PUT  /parameter/:id > update parameter
+ 
+ GET  /parameter/:id > get parameter by id
+ 
+ GET  /parameterlist > get parameter list
+ 
+ DELETE  /parameter/:id > update parameter
 
- Get Application Configuration List
+ # Config Service
+ 
+ https://configapi-3uudw2ymta-uc.a.run.app/config
+ 
+ GET  /config > get app config
 
- # Frontend Routes
 
- /
+ # Frontend
  
- /login
- 
- /register
- 
- /edit
- 
-
- # Db
-
- Firebase
- 
- 
+ https://reactfrontend-7wpxaylhhq-uc.a.run.app
