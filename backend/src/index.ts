@@ -3,43 +3,46 @@ import { interceptors } from "./interceptors";
 import { log } from "./utils/logger";
 import bodyParser from "body-parser";
 import * as admin from "firebase-admin";
-import { environment } from "./environment/environment";
 import { HttpServer } from "./controllers";
 import { CONTROLLERS } from "./controllers/controllers";
 import { initializeApp } from "firebase/app";
 import cors from "cors";
+import config from "./config";
 
-if (!environment?.firebaseadmin?.credentials?.project_id?.length) {
+console.log(config);
+
+if (!config?.FIREBASE_ADMIN?.project_id?.length) {
   throw Error(
     'Missing Firebase Admin Credentials. Please, check the "Getting Started" section'
   );
 }
-if (!environment?.firebase?.credentials?.projectId?.length) {
+if (!config?.FIREBASE?.projectId?.length) {
   throw Error(
     'Missing Firebase Credentials. Please, check the "Getting Started" section'
   );
 }
 
 //user
-initializeApp(environment?.firebase.credentials);
+initializeApp(config?.FIREBASE);
 //admin
 admin.initializeApp({
   credential: admin.credential.cert(
-    environment.firebaseadmin.credentials as any
+    config.FIREBASE_ADMIN as any
   ),
-  projectId: environment.firebaseadmin.credentials.project_id,
-  databaseURL: environment.firebaseadmin.databaseURL,
+  projectId: config.FIREBASE_ADMIN.project_id,
+  databaseURL: `https://${
+      config.FIREBASE_ADMIN.project_id ?? ""
+  }.firebaseio.com`,
 });
 
 const app: Express = express();
 const httpServer = new HttpServer(app);
-//const port = process.env.PORT || 3000;
-const port = environment?.PORT || 3002;
-
+const port = config.PORT || 3001;
+const frontend_url = config?.FRONTEND_URL || "http://localhost:3000";
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.use(cors({ credentials: true, origin: "https://reactfrontend-7wpxaylhhq-uc.a.run.app" }));
+app.use(cors({ credentials: true, origin: frontend_url }));
 
 for (let i = 0; i < interceptors.length; i++) {
   app.use(interceptors[i]);
